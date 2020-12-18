@@ -1,12 +1,12 @@
 ---
-RFC: XXXX
+RFC: 0001
 Author: Roni Choudhury
 Created: 2020-06-29
 Created: 2020-12-09
 Last-Modified: 2020-12-09
 ---
 
-# RFC XXXX: Initial Configuration Handling: Meta-Configuration Expansion
+# RFC 0001: Initial Configuration Handling: Meta-Configuration Expansion
 
 One of the core features of our vision for Tinker Engine is the ability to
 accept a kind of "meta-configuration" from which concrete configurations are
