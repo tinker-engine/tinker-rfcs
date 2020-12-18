@@ -169,6 +169,27 @@ directed by the arguments. The runtime will first check to see that
 `MyAlgorithm.FooBar` and `MyAlgorithm.FooBaz` are existing, usable SMQTK
 algorithms as part of the validation phase.
 
+In general, directives such as `smqtk` and `values` (and others that will be
+defined in future efforts as needed) can be embedded within other values in the
+configuration file. For instance, if a SMQTK algorithm requires another SMQTK
+algorithm as an initialization parameter, it can be specified the same way as
+the preceding examples at the appropriate place:
+
+```yaml
+foo:
+  smqtk: MyAlgorithm.SomeAlgo
+  config:
+    foo: 1
+    bar:
+      smqtk: MyAlgorithm.OtherAlgo
+      config:
+        baz: 3
+```
+
+This example would construct an instance of `OtherAlgo`, then use that algorithm
+object to construct an instance of `SomeAlgo`, which would in turn be available
+to the protocol.
+
 #### Schema and validation
 
 The meta-configuration schema will be formalized in such a way that the format
