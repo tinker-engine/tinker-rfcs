@@ -194,7 +194,16 @@ to the protocol.
 
 The meta-configuration schema will be formalized in such a way that the format
 can be presented in documentation easily, and so that configurations can be
-validated at runtime. A tool such as JSON Schema may be the right tool for this.
+validated at runtime.
+
+JSON Schema may be the right tool for this. With such a defined schema, Tinker
+Engine could validate a configuration file before any further processing is
+done, detecting "syntax" errors and other deficiencies, guiding users to a
+valid, sensical configuration that can then be submitted for processing and
+execution.
+
+There are tools that can convert a JSON schema specification into documentation.
+This will ease the documentation burden, both on the developers and users.
 
 #### Simple configuration
 
