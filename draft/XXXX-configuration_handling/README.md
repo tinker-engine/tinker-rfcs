@@ -47,6 +47,11 @@ The design of the particular experiment will be captured in the variation of
 configuration values, as expressed via *declarative meta-configuration* or
 *programmatic configuration*.
 
+In keeping with the scientific method, the configuration used to launch each
+execution will itself be saved along with the other outputs from that run of the
+protocol. This is a requirement for reproducibility, and provides an essential
+ingredient in understanding how the output was produced.
+
 ### Declarative Meta-Configuration
 
 In many cases, the user of Tinker Engine will want to run a protocol multiple
