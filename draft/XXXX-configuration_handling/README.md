@@ -6,14 +6,16 @@ Created: 2020-12-09
 Last-Modified: 2020-12-09
 ---
 
-# RFC XXXX: Configuration Handling
+# RFC XXXX: Initial Configuration Handling: Meta-Configuration Expansion
 
 One of the core features of our vision for Tinker Engine is the ability to
 accept a kind of "meta-configuration" from which concrete configurations are
 generated, used to drive individual protocol runs, with results aggregated
 together in some way that enables post-hoc data analysis. This RFC lays out some
 ideas for some of the core features such a handler will have, along with an
-overall architecture for configuration hanlding in Tinker Engine.
+overall architecture for configuration hanlding in Tinker Engine. The main
+feature this RFC focuses on is *meta-configuration expansion*, the creation of a
+sequence of concrete configurations from a single meta-configuration.
 
 ## Proposals
 
